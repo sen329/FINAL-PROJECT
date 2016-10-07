@@ -1,0 +1,5 @@
+My final project is to make an interactive story where choices can affect the storyline. 
+Players need to choose the story based on the situation shown in the text. 
+It is similar to old interactive games, which players need to choose. 
+It may require a lot of IF functions, and I need to write the story first.
+End of report #1
