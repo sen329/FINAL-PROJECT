@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -27,9 +28,9 @@ int main(){
 		}
 		else {
 			cout << "Please choose a valid option";
+		
 		}
 	}
-	
 	while(option !=3);
 	
 	return 0;
@@ -37,19 +38,18 @@ int main(){
 
 void StartStory()
 {
-	char choice, die, live;
+	string choice;
 	
 	cout << "This is where story begins"<<endl;
 	system ("pause");
 	cout << "die or live? ";
 	cin >> choice;
 	
-	if(choice == die){
+	if(choice == "die"){
 		cout << "you died"<<endl;
 		
 	}
-	else if (choice == live){
-		cout << "for now this is the end"<<endl;
-		
+	else if (choice == "live"){
+		cout << "for now this is the end"<<endl;	
 	}
 }
