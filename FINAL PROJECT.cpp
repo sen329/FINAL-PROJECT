@@ -33,7 +33,7 @@ int main(){
 		
 		}
 	}
-	while(option !=3);
+	while(option !=0);
 	
 	return 0;
 }
@@ -69,8 +69,41 @@ void StartStory()
 
 void StorySection1()
 {
-	cout << "For now this is the end"<<endl;
+	int option1;
+	cout << "You picked up the flashlight"<<endl;
 	system("pause");
+	cout << "You looked around with the flashlight"<<endl;
+	system("pause");
+	cout << "you started to walk towards the door"<<endl;
+	system("pause");
+	cout << "What will you do?"<<endl;
+	do 
+	{
+		cout << "1. Open the door"<<endl;
+		cout << "2. Peek through the keyhole"<<endl;
+		cout << "3. Don't open the door"<<endl;
+		cin >> option1;
+		
+		if(option1 == 1){
+			cout << "You opened the door"<<endl;
+		}
+		else if (option1 == 2){
+			cout << "The area seemed safe"<<endl;
+		}
+		else if (option1 == 3){
+			cout << "You decided to not opened the door"<<endl;
+			system("pause");
+			cout << "You looked around the room again"<<endl;
+			system("pause");
+			cout << "There's nothing here anymore"<<endl;
+			system("pause");
+			cout << "You approached the door again"<<endl;
+		}
+		else {
+			cout << "It is better to peek first before you open"<<endl;
+		}
+	}
+	while (option1 != 3);
 }
 
 void StoryDeath1()
