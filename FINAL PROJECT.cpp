@@ -11,8 +11,8 @@ void StorySection2();
 void BlueDoor();
 void YellowDoor();
 void GreenDoor();
-void SecretDoor();
-void riddlesection();
+void riddlesection(); 
+void lucktest();
 
 int main(){
 	int option;//menu
@@ -168,8 +168,6 @@ void StorySection2(){
 		case 1: BlueDoor();
 			break;
 		case 2: YellowDoor();
-			break;
-		case 0: SecretDoor();
 			break;
 		default: cout << "Voice: " <<endl << "Choose a door";
 	}
@@ -838,9 +836,6 @@ void deathdoor(){
 }
 
 
-void SecretDoor(){
-	
-}
 
 void FINAL1(){
 	void Ending1();
